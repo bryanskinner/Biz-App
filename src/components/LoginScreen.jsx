@@ -47,7 +47,7 @@ const LoggedInListings = ({ user }) => {
 
   return (
     <div>
-      <h2>Logged In Listings</h2>
+      <h2>Buisness Listings</h2>
       <table>
         <thead>
           <tr>

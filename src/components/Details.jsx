@@ -6,8 +6,8 @@ const Details = () => {
   const googleMapsApiKey = 'AIzaSyCcb_6ZEojwije1CEVteNl6h6IFWbDnvW0';
 
   const mapCenter = {
-    lat: 0, 
-    lng: 0, 
+    lat: 30.2672, 
+    lng: -97.7431, 
   };
 
   return (

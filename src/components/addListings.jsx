@@ -11,13 +11,12 @@ const AddListingPage = ({ user, addListing }) => {
   });
 
   const [mapUrl, setMapUrl] = useState('');
-
   useEffect(() => {
-
     const addressForMap = encodeURIComponent(formData.address);
-    const googleMapsUrl = `https://maps.google.com/maps?q=${encodeURIComponent('123 Main St, City, State')}`;
+    const googleMapsUrl = `https://maps.google.com/maps?q=${addressForMap}`;
     setMapUrl(googleMapsUrl);
   }, [formData.address]);
+  
 
   const handleChange = (e) => {
     const { name, value } = e.target;

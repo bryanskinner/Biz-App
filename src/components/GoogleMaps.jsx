@@ -6,7 +6,7 @@ const GoogleMap = ({ apiKey }) => {
     <div style={{ height: '400px', width: '100%' }}>
       <GoogleMapReact
         bootstrapURLKeys={{ key: apiKey }}
-        defaultCenter={{ lat: 0, lng: 0 }} 
+        defaultCenter={{ lat: 30.2672, lng: -97.7431 }} 
         defaultZoom={10} 
       >
 

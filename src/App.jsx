@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import { Provider } from 'react-redux'; 
 import store from './store'; 
+import Navbar from './components/Navbar';
 import Listing from './components/Listings';
 import LoggedInListings from './components/LoginScreen';
 import Details from './components/Details';
@@ -21,6 +22,7 @@ const App = () => {
     <Provider store={store}>
       <Router>
         <div className="App">
+          <Navbar></Navbar>
           <Switch>
             <Route path="/" exact component={Listing} />
             <Route path="/details/:id" component={Details} />
